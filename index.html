@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="sectioncounter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar Starts Here -->
+    <nav id="desktop-nav">
+        <div class="logo">Niraj Patil</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Niraj Patil</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends Here -->
+
+
+    <!-- Profile section Starts Here -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic (5).png" alt="Niraj Patil profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Niraj Patil</h1>
+            <p class="section__text__p2">FullStack Developer</p>
+            <h3 style="margin: 20px;">I develop Web application, user interfaces and 3Dvisuals.</h3>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Niraj Patil 13 march 2024 (1).pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/niraj-patil-ba3212191/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/nirajpatil22400'" />
+            </div>
+        </div>
+        <!-- <i id="light-bulb" class="fa-solid fa-lightbulb" style="font-size: 30px;cursor: pointer;"></i> -->
+    </section>
+    <!-- Profile section Ends Here -->
+
+
+    <!-- About Section starts Here -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/IMG_20231231_135053.jpg" alt="Profile picture" class=" zoom about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>E&TC Bachelors Degree<br />Fullstack Developer Certified</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h3>Introduction</h3>
+                    <h2>Overview</h2>
+                    <h3>
+                        I'm a skilled software developer with experience in HTML ,CSS and JavaScript, and expertise in
+                        frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with
+                        clients to create efficient, scalable, and user-friendly solutions that solve real-world
+                        problems. Let's work together to bring your ideas to life!
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <!-- About Section Ends Here -->
+
+
+    <!-- Cards Section Start Here -->
+    <section>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <p class="text"><i class="fa-solid fa-code"></i></p>
+                    <h3 class="text">Web</h3>
+                    <p class="text">Developer</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p class="text"><i class="fa-brands fa-react"></i></p>
+                    <h3 class="text">React JS</h3>
+                    <p class="text">Developer</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p class="text"><i class="fa-brands fa-connectdevelop"></i></p>
+                    <h3 class="text">Backend</h3>
+                    <p class="text">Developer</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <p class="text"><i class="fa-brands fa-creative-commons-remix"></i></p>
+                    <h3 class="text">Content</h3>
+                    <p class="text">Creator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cards Section Ends Here -->
+
+
+    <!-- Experience Section Start Here -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Boostrap</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Angular JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Django</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <!-- Experience Section Ends Here -->
+
+
+    <!-- Projects Section Start Here line1 -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <h2>My Work</h2>
+        <h3>Following projects showcases my skills and experience through real-world examples of my work. Each project
+            is briefly described with links to code repositories and live demos in it. It reflects my ability to solve
+            complex problems, work with different technologies, and manage projects effectively.</h3>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 164302.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/f2youtubeclone'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/f2youtubeclone/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Youtube Clone</h3>
+                    <h5 align="center" style="margin: 10px;">Designed and implemented a fully functional YouTube clone,
+                        showcasing proficiency
+                        in full-stack
+                        web development. Led a team of one developers to create a user-friendly platform that
+                        replicates the core features of YouTube, including video uploading, streaming, user
+                        authentication, and comments.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 165402.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/frontendcontest3'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/frontendcontest3/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Restaurant Clone</h3>
+                    <h5 align="center" style="margin: 10px;">Led the design and development of a dynamic and visually
+                        appealing restaurant
+                        website, catering to both desktop and mobile users. Utilized a user-centered approach to enhance
+                        the online presence and customer experience for Ocean Spice, a 1990
+                        establishment.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 170749.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Post-Office-Application'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Post-Office-Application/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Post office Application</h3>
+                    <h5 align="center" style="margin: 10px;">Led the development of a comprehensive Post Office
+                        Application website, enhancing
+                        accessibility for users seeking postal services in the vicinity of [City/Town]. The platform
+                        provides an intuitive interface for users to locate nearby post offices, track parcels, and
+                        access essential postal services seamlessly.
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <!-- Projects Section Ends Here -->
+    <!-- Projects Section Start Here line2-->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 173636.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Four</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/ReactCalculator'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/ReactCalculator/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3> React Calculator</h3>
+                    <h5 align="center" style="margin: 10px;">Developed a fully functional and responsive calculator
+                        application using React.js, showcasing proficiency in front-end web development. The project
+                        provides users with a user-friendly interface for performing basic and advanced mathematical
+                        operations.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 174418.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Five</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Shopping-Cart-Project'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Shopping-Cart-Project/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>MeShop</h3>
+                    <h5 align="center" style="margin: 10px;">Led the development of Meshop, a feature-rich e-commerce
+                        website, demonstrating expertise in HTML, CSS, and JavaScript. Meshop provides users with a
+                        seamless online shopping experience, incorporating essential features such as a secure payment
+                        gateway, shopping cart functionality, and an intuitive product purchasing process.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 175014.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Six</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Student_Management_System_Frontend_Module_Test_2'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Student_Management_System_Frontend_Module_Test_2/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Student Management System</h3>
+                    <h5 align="center" style="margin: 10px;">Directed the development of a comprehensive Student
+                        Management System, showcasing proficiency in HTML, CSS, and JavaScript. The system
+                        streamlines academic processes, offering administrators and educators a user-friendly
+                        platform for student data management, attendance tracking, and performance analysis.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section Ends Here -->
+
+    <!-- Projects Section Start Here line3-->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 175723.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Seven</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/F2_Contest2_June_24'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/F2_Contest2_June_24/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Market Coin Data Web Application </h3>
+                    <h5 align="center" style="margin: 10px;">Engineered a cutting-edge Market Coin Data platform,
+                        exemplifying mastery in front-end development with HTML, CSS, and JavaScript. Distinguished by
+                        an innovative search bar feature, this project empowers users to seamlessly explore and analyze
+                        cryptocurrency data based on coin names, percentages, and symbols.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 180509.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Eight</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/spotify-clone'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/spotify-clone/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Spotify Clone</h3>
+                    <h5 align="center" style="margin: 10px;">Architected and implemented a feature-rich Spotify Clone,
+                        showcasing expertise in front-end development with HTML, CSS, and JavaScript. Elevated the
+                        project by integrating a curated selection of music, offering users a personalized and immersive
+                        listening experience akin to the renowned music streaming platform.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 180907.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Nine</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Frontend-Module-Test_1'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Frontend-Module-Test_1/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Landing Page</h3>
+                    <h5 align="center" style="margin: 10px;">Designed and developed an impactful landing page using HTML
+                        and CSS, showcasing a blend of creativity and technical proficiency. The project highlights my
+                        expertise in front-end web development, ensuring a visually appealing and user-friendly
+                        experience.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section Ends Here -->
+
+    <!-- Projects Section Start Here line4-->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 181801.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Ten</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Testcalculator'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://reactcalculatorapplication.netlify.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>React Calculator Mobile Design </h3>
+                    <h5 align="center" style="margin: 10px;">Led the design and development of a cutting-edge React
+                        Calculator, with a specialized emphasis on creating an optimal mobile user experience.
+                        Demonstrated proficiency in front-end development, employing React.js, HTML, CSS, and responsive
+                        design principles to deliver a seamless and visually engaging calculator application tailored
+                        for mobile devices.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 184101.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Eleven </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/3D-Porfolio'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://niraj-patil-portfolio.netlify.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>MeShop</h3>
+                    <h5 align="center" style="margin: 10px;">Championed the development of an innovative 3D Portfolio
+                        using React.js, leveraging the power of Tailwind CSS for styling and incorporating seamless
+                        contact form functionality via EmailJS. This project not only showcases my prowess in front-end
+                        development but also my ability to integrate dynamic and interactive features for an engaging
+                        user experience.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 193635.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Twelve </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/GuessMy_Number'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/GuessMy_Number/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Guess My Number</h3>
+                    <h5 align="center" style="margin: 10px;">Designed and implemented an interactive "Guess My Number"
+                        game, showcasing proficiency in front-end web development using HTML, CSS, and JavaScript. This
+                        project demonstrates my ability to create engaging and user-friendly web applications, offering
+                        players an entertaining and challenging experience.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section Ends Here -->
+
+    <!-- Projects Section Start Here line6-->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 194431.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Thirteen</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Pig_Game'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Pig_Game/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Pig-Game </h3>
+                    <h5 align="center" style="margin: 10px;">Led the development of an engaging and interactive "Pig
+                        Game," showcasing expertise in front-end web development with HTML, CSS, and JavaScript. This
+                        project demonstrates my ability to create dynamic and entertaining web applications, offering
+                        players an immersive and strategic gaming experience.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 195927.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Fourteen </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Bankist'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://bankitapplication.netlify.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Bankist Web Design</h3>
+                    <h5 align="center" style="margin: 10px;">Led the conceptualization and design of a modern Bank
+                        Website, showcasing proficiency in front-end web development with HTML, CSS, and JavaScript.
+                        This project underscores my commitment to creating visually compelling and user-friendly
+                        interfaces within the financial sector.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 200242.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Fifteen </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Mapty'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Mapty/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Mapty</h3>
+                    <h5 align="center" style="margin: 10px;"> Implemented the Mapty application, a dynamic fitness
+                        tracking platform developed to record and visualize outdoor activities such as walking, running,
+                        and cycling. Proficiently utilizing HTML, CSS, and JavaScript, this project showcases my
+                        capabilities in front-end web development and offers users an intuitive interface for tracking
+                        and analyzing their fitness endeavors.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section Ends Here -->
+
+    <!-- Projects Section Start Here line6-->
+    <section id="projects">
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 205156.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Thirteen</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Flower-WebSite'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Flower-WebSite/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Flower Website</h3>
+                    <h5 align="center" style="margin: 10px;">Initiated and executed the design of a captivating Flower
+                        Website, seamlessly integrating a dynamic filter button and timeline functionality. Leveraging
+                        my expertise in HTML, CSS, and JavaScript, this project combines visual appeal with interactive
+                        features, providing users with an engaging platform to explore and experience floral beauty.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 224503.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Fourteen </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/imagewindow'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://6591a1616ca12d2dde96bbac--astounding-cobbler-f09e07.netlify.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Image Window</h3>
+                    <h5 align="center" style="margin: 10px;">Initiated and successfully developed an innovative Image
+                        Window project, showcasing my proficiency in front-end web development. This project focuses on
+                        providing users with an immersive and visually rich experience for viewing and interacting with
+                        images.
+                    </h5>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Screenshot 2023-12-31 231144.png" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Fifteen </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/nirajpatil22400/Dark-Mode'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://nirajpatil22400.github.io/Dark-Mode/'">
+                            Live Demo
+                        </button>
+                    </div>
+                    <hr style="margin: 10px 0px;">
+                    <h3>Dark Mode On Checkbox</h3>
+                    <h5 align="center" style="margin: 10px;"> Conceptualized, designed, and implemented a dynamic Dark
+                        Mode feature using a checkbox, showcasing my expertise in front-end web development. This
+                        project enhances user experience by providing a customizable interface, allowing users to
+                        seamlessly switch between light and dark modes.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section Ends Here -->
+
+
+
+    <!-- Contact Section Start Here -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:nirajpatil22400@gmail.com">nirajpatil22400@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/niraj-patil-ba3212191/">LinkedIn</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <i class="fa-solid fa-phone" style="font-size: 25px;"></i>
+                <p><a href="tel:+919301062318">9301062318</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <i class="fa-brands fa-square-instagram" style="font-size: 25px;"></i>
+                <p><a href="https://www.instagram.com/shiva7022coding/">shiva7022coding</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends Here -->
+
+
+    <!-- Footer Section Start Here -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Niraj Patil. All Rights Reserved.</p>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+
+    <!-- Javscript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
